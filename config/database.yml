@@ -9,8 +9,8 @@ default: &default
   host:		localhost
   port:		1521
   database:	pdb1
-  username:	hr
-  password:	hr
+  username:	globalservices
+  password:	globalservices
 
 development:
   <<: *default

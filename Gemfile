@@ -28,7 +28,7 @@ gem 'spring',        group: :development
 
 gem 'ruby-oci8'
 gem 'activerecord-oracle_enhanced-adapter'
-gem 'bootstrap-sass', '2.3.2.0'
+gem 'bootstrap-sass'
 gem 'sprockets', '2.11.0'
 
 # Use ActiveModel has_secure_password
