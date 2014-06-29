@@ -1,28 +1,17 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is to create a site to manage client records, as well as the associated projects and project metrics. 
 
-Things you may want to cover:
+Things to do:
 
-* Ruby version
+* log in system for admins and users (customers)
 
-* System dependencies
+* edit clients, projects, qlikview licenses and financial info
 
-* Configuration
+* restrict access to admin pages and build out dashboards
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* lots of other ancilliary stuff
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+
