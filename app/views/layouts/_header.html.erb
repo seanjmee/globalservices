@@ -1,0 +1,31 @@
+<head>
+  <title>Global Services</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+<nav class="navbar navbar-default" role="navigation">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">iQuate Global Services</a>
+    </div>
+  <div class="container">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+      
+      <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+  <li> <a class="navbar-link">  Welcome <strong> <%= current_user.email %> </strong> </a> </li>
+  <li> <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> </li>
+  <li> <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %> </li>
+
+<% else %>
+  <li> <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %> </li>
+  <% end %>
+      </ul>
+      
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+</head>

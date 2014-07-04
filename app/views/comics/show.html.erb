@@ -1,21 +1,23 @@
 <div class="center hero-unit" >
+<div class="container" >
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong>Name:</strong>
   <%= @comic.title %>
 </p>
 
 <p>
-  <strong>Issue:</strong>
+  <strong>Contact Email:</strong>
   <%= @comic.issue %>
 </p>
 
 <p>
-  <strong>Publisher:</strong>
+  <strong>Location:</strong>
   <%= @comic.publisher %>
 </p>
 
 <%= link_to 'Edit', edit_comic_path(@comic) %> |
 <%= link_to 'Back', comics_path %>
+</div>
 </div>
