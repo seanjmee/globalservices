@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140704114817) do
+ActiveRecord::Schema.define(version: 20140704135420) do
 
   create_table "comics", force: true do |t|
     t.string   "title"
@@ -20,6 +20,36 @@ ActiveRecord::Schema.define(version: 20140704114817) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "email_address"
+  end
+
+  create_table "projects", force: true do |t|
+    t.string   "project_name"
+    t.integer  "client_id",               precision: 38, scale: 0
+    t.string   "project_type"
+    t.string   "primary_location"
+    t.string   "license_type"
+    t.string   "complexity_score"
+    t.string   "project_description"
+    t.integer  "budget_days",             precision: 38, scale: 0
+    t.string   "expense_policy"
+    t.datetime "project_start"
+    t.datetime "project_end"
+    t.string   "vendors"
+    t.string   "products"
+    t.string   "services"
+    t.integer  "estimated_server_count",  precision: 38, scale: 0
+    t.integer  "estimated_desktop_count", precision: 38, scale: 0
+    t.string   "account_manager"
+    t.string   "project_manager"
+    t.string   "technical_lead"
+    t.string   "client_sponsor"
+    t.string   "client_project_manager"
+    t.string   "client_technical_lead"
+    t.string   "project_status"
+    t.string   "project_stage"
+    t.text     "progress_summary"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|

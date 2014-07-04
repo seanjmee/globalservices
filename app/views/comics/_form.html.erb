@@ -12,18 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
+    <%= f.label "Name" %><br>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :issue %><br>
-    <%= f.number_field :issue %>
+    <%= f.label :email_address %><br>
+    <%= f.text_field :email_address %>
   </div>
   <div class="field">
-    <%= f.label :publisher %><br>
+    <%= f.label "Location" %><br>
     <%= f.text_field :publisher %>
   </div>
-  <div class="btn btn-primary btn-large">
+  <div class="btn btn-primary">
     <%= f.submit %>
   </div>
 <% end %>
