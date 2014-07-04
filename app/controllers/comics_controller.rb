@@ -5,11 +5,13 @@ class ComicsController < ApplicationController
   # GET /comics.json
   def index
     @comics = Comic.all
+
   end
 
   # GET /comics/1
   # GET /comics/1.json
   def show
+
   end
 
   # GET /comics/new

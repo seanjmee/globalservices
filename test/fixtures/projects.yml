@@ -26,6 +26,7 @@ one:
   project_status: MyString
   project_stage: MyString
   progress_summary: MyText
+  comics_id: 
 
 two:
   project_name: MyString
@@ -53,3 +54,4 @@ two:
   project_status: MyString
   project_stage: MyString
   progress_summary: MyText
+  comics_id: 

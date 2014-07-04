@@ -1,4 +1,5 @@
-<h1>Listing projects</h1>
+<div class="jumbotron">
+<h1>Listing projects <small>Global Services</small></h1>
 
 <table>
   <thead>
@@ -28,12 +29,14 @@
       <th>Project status</th>
       <th>Project stage</th>
       <th>Progress summary</th>
+      <th>Comics</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @projects.each do |project| %>
+    <% @linker = Comic.find(project.comic_id).title %>
       <tr>
         <td><%= project.project_name %></td>
         <td><%= project.client_id %></td>
@@ -60,6 +63,7 @@
         <td><%= project.project_status %></td>
         <td><%= project.project_stage %></td>
         <td><%= project.progress_summary %></td>
+        <td><%= @linker %> </td>
         <td><%= link_to 'Show', project %></td>
         <td><%= link_to 'Edit', edit_project_path(project) %></td>
         <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -71,3 +75,4 @@
 <br>
 
 <%= link_to 'New Project', new_project_path %>
+</div>

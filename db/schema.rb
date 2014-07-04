@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140704135420) do
+ActiveRecord::Schema.define(version: 20140704145334) do
 
   create_table "comics", force: true do |t|
     t.string   "title"
@@ -50,7 +50,10 @@ ActiveRecord::Schema.define(version: 20140704135420) do
     t.text     "progress_summary"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "comic_id",                precision: 38, scale: 0
   end
+
+  add_index "projects", ["comic_id"], name: "index_projects_on_comic_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                                           default: "", null: false
