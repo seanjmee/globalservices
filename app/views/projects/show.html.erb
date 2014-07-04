@@ -1,0 +1,129 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Project name:</strong>
+  <%= @project.project_name %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @project.client_id %>
+</p>
+
+<p>
+  <strong>Project type:</strong>
+  <%= @project.project_type %>
+</p>
+
+<p>
+  <strong>Primary location:</strong>
+  <%= @project.primary_location %>
+</p>
+
+<p>
+  <strong>License type:</strong>
+  <%= @project.license_type %>
+</p>
+
+<p>
+  <strong>Complexity score:</strong>
+  <%= @project.complexity_score %>
+</p>
+
+<p>
+  <strong>Project description:</strong>
+  <%= @project.project_description %>
+</p>
+
+<p>
+  <strong>Budget days:</strong>
+  <%= @project.budget_days %>
+</p>
+
+<p>
+  <strong>Expense policy:</strong>
+  <%= @project.expense_policy %>
+</p>
+
+<p>
+  <strong>Project start:</strong>
+  <%= @project.project_start %>
+</p>
+
+<p>
+  <strong>Project end:</strong>
+  <%= @project.project_end %>
+</p>
+
+<p>
+  <strong>Vendors:</strong>
+  <%= @project.vendors %>
+</p>
+
+<p>
+  <strong>Products:</strong>
+  <%= @project.products %>
+</p>
+
+<p>
+  <strong>Services:</strong>
+  <%= @project.services %>
+</p>
+
+<p>
+  <strong>Estimated server count:</strong>
+  <%= @project.estimated_server_count %>
+</p>
+
+<p>
+  <strong>Estimated desktop count:</strong>
+  <%= @project.estimated_desktop_count %>
+</p>
+
+<p>
+  <strong>Account manager:</strong>
+  <%= @project.account_manager %>
+</p>
+
+<p>
+  <strong>Project manager:</strong>
+  <%= @project.project_manager %>
+</p>
+
+<p>
+  <strong>Technical lead:</strong>
+  <%= @project.technical_lead %>
+</p>
+
+<p>
+  <strong>Client sponsor:</strong>
+  <%= @project.client_sponsor %>
+</p>
+
+<p>
+  <strong>Client project manager:</strong>
+  <%= @project.client_project_manager %>
+</p>
+
+<p>
+  <strong>Client technical lead:</strong>
+  <%= @project.client_technical_lead %>
+</p>
+
+<p>
+  <strong>Project status:</strong>
+  <%= @project.project_status %>
+</p>
+
+<p>
+  <strong>Project stage:</strong>
+  <%= @project.project_stage %>
+</p>
+
+<p>
+  <strong>Progress summary:</strong>
+  <%= @project.progress_summary %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

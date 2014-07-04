@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project_name: MyString
+  client_id: 1
+  project_type: MyString
+  primary_location: MyString
+  license_type: MyString
+  complexity_score: MyString
+  project_description: MyString
+  budget_days: 1
+  expense_policy: MyString
+  project_start: 2014-07-04
+  project_end: 2014-07-04
+  vendors: MyString
+  products: MyString
+  services: MyString
+  estimated_server_count: 1
+  estimated_desktop_count: 1
+  account_manager: MyString
+  project_manager: MyString
+  technical_lead: MyString
+  client_sponsor: MyString
+  client_project_manager: MyString
+  client_technical_lead: MyString
+  project_status: MyString
+  project_stage: MyString
+  progress_summary: MyText
+
+two:
+  project_name: MyString
+  client_id: 1
+  project_type: MyString
+  primary_location: MyString
+  license_type: MyString
+  complexity_score: MyString
+  project_description: MyString
+  budget_days: 1
+  expense_policy: MyString
+  project_start: 2014-07-04
+  project_end: 2014-07-04
+  vendors: MyString
+  products: MyString
+  services: MyString
+  estimated_server_count: 1
+  estimated_desktop_count: 1
+  account_manager: MyString
+  project_manager: MyString
+  technical_lead: MyString
+  client_sponsor: MyString
+  client_project_manager: MyString
+  client_technical_lead: MyString
+  project_status: MyString
+  project_stage: MyString
+  progress_summary: MyText
