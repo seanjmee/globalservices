@@ -5,31 +5,20 @@
   <thead>
     <tr>
       <th>Project name</th>
-      <th>Client</th>
-      <th>Project type</th>
-      <th>Primary location</th>
       <th>License type</th>
       <th>Complexity score</th>
       <th>Project description</th>
       <th>Budget days</th>
-      <th>Expense policy</th>
       <th>Project start</th>
       <th>Project end</th>
-      <th>Vendors</th>
-      <th>Products</th>
-      <th>Services</th>
       <th>Estimated server count</th>
       <th>Estimated desktop count</th>
       <th>Account manager</th>
       <th>Project manager</th>
       <th>Technical lead</th>
-      <th>Client sponsor</th>
-      <th>Client project manager</th>
-      <th>Client technical lead</th>
       <th>Project status</th>
       <th>Project stage</th>
-      <th>Progress summary</th>
-      <th>Comics</th>
+      <th>Client Name</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -39,30 +28,19 @@
     <% @linker = Comic.find(project.comic_id).title %>
       <tr>
         <td><%= project.project_name %></td>
-        <td><%= project.client_id %></td>
-        <td><%= project.project_type %></td>
-        <td><%= project.primary_location %></td>
         <td><%= project.license_type %></td>
         <td><%= project.complexity_score %></td>
         <td><%= project.project_description %></td>
         <td><%= project.budget_days %></td>
-        <td><%= project.expense_policy %></td>
         <td><%= project.project_start %></td>
         <td><%= project.project_end %></td>
-        <td><%= project.vendors %></td>
-        <td><%= project.products %></td>
-        <td><%= project.services %></td>
         <td><%= project.estimated_server_count %></td>
         <td><%= project.estimated_desktop_count %></td>
         <td><%= project.account_manager %></td>
         <td><%= project.project_manager %></td>
         <td><%= project.technical_lead %></td>
-        <td><%= project.client_sponsor %></td>
-        <td><%= project.client_project_manager %></td>
-        <td><%= project.client_technical_lead %></td>
         <td><%= project.project_status %></td>
         <td><%= project.project_stage %></td>
-        <td><%= project.progress_summary %></td>
         <td><%= @linker %> </td>
         <td><%= link_to 'Show', project %></td>
         <td><%= link_to 'Edit', edit_project_path(project) %></td>
