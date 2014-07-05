@@ -46,7 +46,7 @@
         <td><%= @linker %> </td>
         <td> <div class="btn btn-small"> <%= link_to 'Show', project %> </div> </td>
         <td> <div class="btn btn-small"> <%= link_to 'Edit', edit_project_path(project) %> </div>  </td>
-        <td> <div class="btn btn-small"> <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %> </div> </td>
+        <td> <div class="btn btn-small"> <%= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?' } %> </div> </td>
       </tr>
     <% end %>
   </tbody>

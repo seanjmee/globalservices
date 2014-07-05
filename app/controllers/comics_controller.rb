@@ -11,7 +11,7 @@ class ComicsController < ApplicationController
   # GET /comics/1
   # GET /comics/1.json
   def show
-    @associated_projects = Project.find(:project_id)
+   
   end
 
   # GET /comics/new

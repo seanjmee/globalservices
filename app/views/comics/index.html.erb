@@ -22,7 +22,7 @@
         <td><%= comic.publisher %></td>
         <td> <div class="btn btn-small"> <%= link_to 'Show', comic %> </div> </td>
         <td> <div class="btn btn-small"> <%= link_to 'Edit', edit_comic_path(comic) %> </div>  </td>
-        <td> <div class="btn btn-small"> <%= link_to 'Destroy', comic, method: :delete, data: { confirm: 'Are you sure?' } %> </div> </td>
+        <td> <div class="btn btn-small"> <%= link_to 'Delete', comic, method: :delete, data: { confirm: 'Are you sure?' } %> </div> </td>
       </tr>
     <% end %>
   </tbody>

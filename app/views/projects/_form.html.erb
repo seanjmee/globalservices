@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :client_id %><br>
-    <%= f.number_field :client_id %>
+    <%= f.collection_select(:comic, Comic.all, :id, :name_to_select, promt: true) %>
   </div>
   <div class="field">
     <%= f.label :project_type %><br>
@@ -25,15 +25,15 @@
   </div>
   <div class="field">
     <%= f.label :primary_location %><br>
-    <%= f.text_field :primary_location %>
+    <%= f.select :primary_location, options_for_select(["USA (East)", "USA (West)", "USA (Central", "UK/Ireland", "DACH Region", "Europe (Other)", "Asia", "Africa"]) %>
   </div>
   <div class="field">
     <%= f.label :license_type %><br>
-    <%= f.text_field :license_type %>
+    <%= f.select :license_type, options_for_select(%w[Perpetual Baseline Support]) %>
   </div>
   <div class="field">
     <%= f.label :complexity_score %><br>
-    <%= f.text_field :complexity_score %>
+    <%= f.select :complexity_score, options_for_select(%w[Low Medium High]) %>
   </div>
   <div class="field">
     <%= f.label :project_description %><br>
@@ -77,15 +77,15 @@
   </div>
   <div class="field">
     <%= f.label :account_manager %><br>
-    <%= f.text_field :account_manager %>
+    <%= f.select :account_manager, options_for_select(["Ragnar Dantuma", "Ian Armstrong", "Barry Bergman", "Doug Ehrenreich", "Will Corcoran", "Pat Durkan", "Other"] ) %> 
   </div>
   <div class="field">
     <%= f.label :project_manager %><br>
-    <%= f.text_field :project_manager %>
+    <%= f.select :project_manager, options_for_select(["Piaras MacDonnell", "Stuart Finnegan", "Jian Chen"]) %>
   </div>
   <div class="field">
     <%= f.label :technical_lead %><br>
-    <%= f.text_field :technical_lead %>
+    <%= f.select :technical_lead, options_for_select(["Sean Mee", "Dan Stuart-Kelly", "Alex Stibayev", "Mark Rispin", "Niall Maguire", "Glen Epperson"]) %>
   </div>
   <div class="field">
     <%= f.label :client_sponsor %><br>
@@ -101,11 +101,11 @@
   </div>
   <div class="field">
     <%= f.label :project_status %><br>
-    <%= f.text_field :project_status %>
+    <%= f.select :project_status, options_for_select(["Red", "Orange", "Green"]) %>
   </div>
   <div class="field">
     <%= f.label :project_stage %><br>
-    <%= f.text_field :project_stage %>
+    <%= f.select :project_stage, options_for_select(["Initiation", "Planning", "Scanning", "Reporting", "Close Off"]) %>
   </div>
   <div class="field">
     <%= f.label :progress_summary %><br>
