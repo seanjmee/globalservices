@@ -25,7 +25,7 @@
 
   <tbody>
     <% @projects.each do |project| %>
-    <% @linker = Comic.find(project.comic_id).title %>
+    <%  @linker = Comic.find(project.comic_id).title %>
     <% @str_date = project.project_start.to_s[0...10] %>
     <% @end_date = project.project_end.to_s[0...10] %>
       <tr>

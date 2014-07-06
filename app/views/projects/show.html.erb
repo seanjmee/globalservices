@@ -7,7 +7,7 @@
 
 <p>
   <strong>Client:</strong>
-  <%= @project.client_id %>
+  <%= @project.comic_id %>
 </p>
 
 <p>
@@ -125,10 +125,6 @@
   <%= @project.progress_summary %>
 </p>
 
-<p>
-  <strong>Comics:</strong>
-  <%= @project.comics %>
-</p>
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>

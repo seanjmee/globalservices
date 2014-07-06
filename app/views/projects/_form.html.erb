@@ -16,8 +16,8 @@
     <%= f.text_field :project_name %>
   </div>
   <div class="field">
-    <%= f.label :client_id %><br>
-    <%= f.collection_select(:comic, Comic.all, :id, :name_to_select, promt: true) %>
+    <%= f.label :comic_id %><br>
+    <%= f.select(:comic_id, Comic.all.collect{ |p| [ p.title, p.id ] }) %>
   </div>
   <div class="field">
     <%= f.label :project_type %><br>
